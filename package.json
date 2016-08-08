@@ -1,0 +1,43 @@
+{
+  "name": "react-lego-player",
+  "version": "0.0.1",
+  "description": "A super simple and flexible React music player.",
+  "main": "lib/index.js",
+  "files": [
+    "*.md",
+    "lib"
+  ],
+  "scripts": {
+    "build:lib": "babel src --out-dir lib",
+    "build": "webpack",
+    "dev": "webpack-dev-server --inline --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asjmtz <asjmtzhang@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.4",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.2",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "howler": "^2.0.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  }
+}

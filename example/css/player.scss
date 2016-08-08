@@ -1,0 +1,70 @@
+/*
+* @Author: asjmtz
+* @Date:   2016-08-06 21:30:53
+* @Last Modified by:   asjmtz
+* @Last Modified time: 2016-08-07 12:05:23
+*/
+
+$track-circle-size: 10px;
+@mixin make-circle($size, $color:#fff){
+	width: $size; 
+	height: $size; 
+	border-radius: 50%;
+	background: $color;
+	margin-left: -0.5 * $size;
+	position: absolute;	
+}
+
+.player{
+	background: #333;
+	margin-left: 20px;
+	.track{
+		cursor: pointer;
+		position: relative;
+		.track-bar{
+			background: #999;
+			height: 5px;
+
+		}
+		.track-circle{
+			@include make-circle($track-circle-size);
+			top: -2px;
+		}
+		.track-progress-bar{
+			width: 0%;
+			height: 100%;
+			background: #fff;
+
+		}
+	}
+
+	.playlist {
+		.playlist-item{
+			cursor: pointer;
+			padding: 10px;
+		}
+		.active{
+			background: rgba(255, 255, 255, 0.21);
+		}
+	}
+
+	.volume{
+		position: relative;
+		margin: 10px 0;
+		width: 200px;
+		.volume-bar{
+			cursor: pointer;
+			height: 5px;
+			background: rgba(255,255,255,0.55);
+			.volume-progress-bar{
+				height: 100%;
+				background: #fff;
+
+			}
+		}
+		.volume-circle{
+			@include make-circle($track-circle-size);
+			top: -2px;
+		}
+	}
+}
