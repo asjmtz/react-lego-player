@@ -78,3 +78,14 @@ class MyPlayer extends Component{
 
 ```
 That's all!! You have already built an awesome music player
+
+## Develop
+
+```
+npm clone git@github.com:asjmtz/react-lego-player.git
+cd react-lego-player
+npm install
+cd example
+webpack-dev-server --inline --hot
+```
+

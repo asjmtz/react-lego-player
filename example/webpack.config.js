@@ -12,7 +12,7 @@ plugins = plugins.concat([
 
 module.exports = {
     entry: {
-        example: exampleEntry,
+        app: [exampleEntry],
 
     },
     // entry: [

@@ -3,8 +3,8 @@ import { Player, PlayBtn, NextBtn, PrevBtn, Track, Duration, CurrentTime, Playli
 import './css/player.scss'
 
 const playlist = [
-	{title: 'stars', file:'../music/1.mp3'},
-	{title: 'road', file:'../music/2.mp3'},
+	{title: 'stars', file:'http://7jpqdg.com1.z0.glb.clouddn.com/1.mp3'},
+	{title: 'road', file:'http://7jpqdg.com1.z0.glb.clouddn.com/2.mp3'},
 ]
 class App extends Component{
 	
